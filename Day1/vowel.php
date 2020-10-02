@@ -1,5 +1,5 @@
 <?php
-  //function isVowel($x){
+  
   	$x='x';
 
 
@@ -39,13 +39,6 @@
   			echo "$x is a consonant..";
   			break;
   	}
-
-  	/*isVowel('a');
-  	isVowel('J');
-  	isVowel('U');
-  	isVowel('K');
-
-  }*/
 
 
 ?>
