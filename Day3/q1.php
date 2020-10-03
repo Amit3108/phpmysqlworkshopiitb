@@ -8,7 +8,7 @@ require 'connect.php';
 	<title>Marksheet</title>
 </head>
 <body>
-<form  action="student_mysql.php" method="POST">
+<form  action="q1.php" method="POST">
 Name of Student:<input type="text" name="name">
 <br>
 <p>Marks in Each Subject</p>
