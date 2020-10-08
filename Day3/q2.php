@@ -79,7 +79,7 @@ echo "Total Marks Obtained: $sum<br>";
 echo "Total Marks: $total<br>";
 echo "Percentage: $per";
 
-$sql = mysqli_query($conn,"UPDATE `class1` SET `sub5`='$m5',`total obtained`='$sum',`percent`='$per' WHERE 1");
+$sql = mysqli_query($conn,"UPDATE `class1` SET `sub5`='$m5',`total obtained`='$sum',`percent`='$per' WHERE `name`='$name'");
 
 if($sql){
 	echo "<br>Record Updated Successfully";
