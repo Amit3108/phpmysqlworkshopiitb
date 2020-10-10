@@ -17,8 +17,7 @@ Length of Side 3:<input type="number" name="s3"><br>
 $s1=$_GET['s1'];
 $s2=$_GET['s2'];
 $s3=$_GET['s3'];
-if (isset($_GET
-	['submit'])) {
+if (isset($_GET['submit'])) {
 if($s1==$s2&& $s2==$s3){
 	echo "It is an Equilateral Triangle..";
 }
