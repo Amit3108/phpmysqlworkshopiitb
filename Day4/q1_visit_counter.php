@@ -1,9 +1,6 @@
 <?php
-$file = file_get_contents("count.txt");
-$visitors = $file+1;
-$newfile=fopen("count.txt","w");
-fwrite(count.txt, $visitors);
-echo "You have ".$visitors." visitors <br>";
+
+
 
 $conn = mysqli_connect("localhost:3307","root","root") or die(mysqli_connect_error());
 mysqli_select_db($conn,"result") or die(mysqli_error($conn));
@@ -12,16 +9,13 @@ echo "Connected!! <br>";
 
 ?>
 <!DOCTYPE HTML>
-<?php
-require 'connect.php';
-?>
 
 <html>
 <head>
 	<title>Marksheet</title>
 </head>
 <body>
-<form  action="student_mysql.php" method="POST">
+<form  action="q4_visit_counter.php" method="POST">
 Name of Student:<input type="text" name="name">
 <br>
 <p>Marks in Each Subject</p>
@@ -102,6 +96,13 @@ else{
 }
 mysqli_close($conn);
 }
+
+$file=file_get_contents("count.txt");
+$visitors=$file;
+$visitorsnew=$visitors+1;
+$filenew = fopen("count.txt","w");
+fwrite($filenew,$visitornew);
+echo "You've had $visitorsnew visitors<br>";
 ?>
 </form>
 </body>
